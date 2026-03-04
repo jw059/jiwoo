@@ -1,0 +1,19 @@
+# Copy to config.yaml and adjust.
+complexes:
+  - name: "Maple Apartment"
+    complex_no: "12345"
+    trade_type: "A1"
+    area_nos: ["84", "112"]
+    price_min: 90000
+    price_max: 150000
+    extra_params:
+      rentPriceMin: 0
+
+poll_interval_seconds: 120
+jitter_seconds: 20
+request_timeout_seconds: 10
+max_retries: 4
+backoff_base_seconds: 1.5
+detect_updates: true
+database_path: "./watcher.db"
+user_agent: "Mozilla/5.0"
